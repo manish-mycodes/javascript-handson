@@ -1,1 +1,5 @@
-# javascript-handson
+First run
+```
+tsc -w 
+
+```
