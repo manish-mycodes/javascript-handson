@@ -1,1 +1,7 @@
 Hoisting
+This Keyword
+Polyfil
+Call, Apply and Bind
+Closures
+
+

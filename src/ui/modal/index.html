@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <button id="myButton">Open Modal</button>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span id="close" class="close">&times;</span>
+                <p>The quick brown fox jumps over the lazy dog.</p>
+            </div>
+        </div>
+        <script>
+            const myButton = document.getElementById('myButton')
+            const myModal = document.getElementById('myModal')
+            const close = document.getElementById('close')
+
+            myButton.onclick = function () {
+                myModal.style.display = 'block'
+            }
+
+            close.onclick = function () {
+                myModal.style.display = 'none'
+            }
+            window.onclick = function (event) {
+                if (event.target == myModal) {
+                    myModal.style.display = 'none'
+                }
+            }
+        </script>
+    </body>
+</html>
